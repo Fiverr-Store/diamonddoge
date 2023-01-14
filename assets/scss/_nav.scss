@@ -1,0 +1,221 @@
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+.navbar-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+  background-color: #12122f;
+	backdrop-filter: blur(8px);
+	transition: all 0.3s ease-out 0s;
+}
+.logo-text{
+  font-family: 'Chakra Petch', sans-serif;
+		font-size: 28px;
+		font-weight: 400;
+		color: #84CCFE;
+}
+
+.navbar {
+	padding: 0;
+	position: relative;
+	transition: all 0.3s ease-out 0s;
+	padding: 12px 0;
+
+	@media only screen and (max-width: 991px) {
+		padding: 12px 0;
+	}
+
+	@media (max-width: 767px) {
+		padding: 12px 0;
+	}
+	@media (max-width: 482px) {
+		padding: 10px 0;
+	}
+
+	.navbar-brand {
+		padding: 0;
+		text-decoration: none;
+    font-family: 'Chakra Petch', sans-serif;
+		font-size: 23px;
+		font-weight: 400;
+		color: #84CCFE;
+
+
+
+		img {
+			height: 28px;
+			transition: all 0.4s ease-in-out;
+			@media only screen and (max-width: 767px) {
+				height: 24px;
+			}
+			@media only screen and (max-width: 482px) {
+				height: 20px;
+			}
+		}
+	}
+
+	.navbar-nav {
+		/** Large devices (desktops, 992px and up) **/
+		@media (min-width: 992px) {
+			align-items: center;
+		}
+
+		.nav-item {
+			position: relative;
+			margin-left: 24px;
+			@media only screen and (max-width: 991px) {
+				margin-left: 16px;
+			}
+      &.active{
+        a{
+          color: $primary-color;
+        }
+        color: $primary-color;
+      }
+			a {
+				text-decoration: none;
+				font-size: 14px;
+				color: #fff;
+				transition: all 0.3s ease-out 0s;
+				padding: 4px 0;
+				position: relative;
+				font-weight: 600;
+				@media only screen and (max-width: 991px) {
+					color: #fff;
+				}
+				&:hover,
+				&.active {
+					color: $primary-color;
+				}
+
+				@media only screen and (max-width: 991px) {
+					display: inline-block;
+					margin: 4px 0px;
+					padding: 6px 0;
+				}
+				@media only screen and (max-width: 767px) {
+					display: inline-block;
+					padding: 6px 0;
+				}
+
+				&.btn-nav {
+					padding: 7px 18px !important;
+					background: linear-gradient(
+						103.39deg,
+						#7452bd 17.02%,
+						#1a68ff 127.4%
+					);
+					border-radius: 7px;
+					transition: all 0.2s ease-in;
+					&:hover {
+						box-shadow: 0 3px 20px 0px rgba(95, 167, 250, 0.52);
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-collapse {
+		@media only screen and (max-width: 991px) {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			background-color: $bg-black;
+			z-index: 9;
+			box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
+			padding: 15px 12px 20px 12px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			background-color: $bg-black;
+			z-index: 9;
+			box-shadow: 0 15px 20px 0 rgba(43, 56, 109, 0.1);
+		}
+	}
+
+	.navbar-toggler {
+		padding: 0;
+
+		&:focus {
+			outline: none;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		.toggler-icon {
+			width: 30px;
+			height: 2px;
+			background-color: $bg-white;
+			display: block;
+			margin: 5px 0;
+			position: relative;
+			-webkit-transition: all 0.3s ease-out 0s;
+			-o-transition: all 0.3s ease-out 0s;
+			transition: all 0.3s ease-out 0s;
+		}
+
+		&.active .toggler-icon {
+			&:nth-of-type(1) {
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				top: 7px;
+			}
+
+			&:nth-of-type(2) {
+				opacity: 0;
+			}
+
+			&:nth-of-type(3) {
+				-webkit-transform: rotate(135deg);
+				-ms-transform: rotate(135deg);
+				transform: rotate(135deg);
+				top: -7px;
+			}
+		}
+	}
+}
+
+.sticky {
+	position: fixed;
+	z-index: 99;
+	background-color: #12122f;
+	backdrop-filter: blur(8px);
+	transition: all 0.3s ease-out 0s;
+
+	.navbar {
+		padding: 10px 0;
+
+		@media only screen and (max-width: 991px) {
+			padding: 10px 0px;
+		}
+
+		@media (max-width: 767px) {
+			padding: 10px 0;
+		}
+
+		.navbar-brand {
+			padding: 0;
+			text-decoration: none;
+			img {
+				height: 26px;
+				transition: all 0.4s ease-in-out;
+				@media only screen and (max-width: 767px) {
+					height: 24px;
+				}
+				@media only screen and (max-width: 482px) {
+					height: 20px;
+				}
+			}
+		}
+	}
+}

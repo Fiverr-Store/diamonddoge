@@ -1,0 +1,600 @@
+/*--------------------------------------------------------------
+# hero-area
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# bridge-page
+--------------------------------------------------------------*/
+.bridge-page {
+	padding-top: 100px;
+	padding-bottom: 70px;
+	@media only screen and (max-width: 767px) {
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
+
+	.bridge-rapper {
+		max-width: 660px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.main-pic {
+		width: 100%;
+		max-width: 300px;
+		border-radius: 14px;
+		margin-bottom: 40px;
+		@media only screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
+	.net-flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.doge-single {
+		background-color: #1a202e;
+		border: 2px solid #777;
+		border-radius: 12px;
+		padding: 12px 12px 15px 12px;
+		min-width: 170px;
+		@media only screen and (max-width: 767px) {
+			min-width: 140px;
+		}
+		.d-logo {
+			height: 50px;
+			margin-bottom: 6px;
+			@media only screen and (max-width: 767px) {
+				height: 40px;
+			}
+		}
+		p {
+			font-size: 19px;
+			font-weight: 600;
+			margin-bottom: 6px;
+			@media only screen and (max-width: 767px) {
+				font-size: 14px;
+			}
+		}
+		span {
+			display: inline-block;
+			font-size: 14px;
+			color: #eee;
+			@media only screen and (max-width: 767px) {
+				font-size: 13px;
+			}
+		}
+		a {
+			text-decoration: underline;
+			color: #eee;
+			display: inline-block;
+			font-size: 14px;
+			@media only screen and (max-width: 767px) {
+				font-size: 13px;
+			}
+		}
+	}
+	.arrow {
+		height: 40px;
+		width: 40px;
+		min-width: 40px;
+		@media only screen and (max-width: 482px) {
+			height: 30px;
+			width: 30px;
+			min-width: 30px;
+		}
+	}
+
+	.amount-box {
+		padding-top: 30px;
+		@media only screen and (max-width: 767px) {
+			padding-top: 20px;
+		}
+		h1 {
+			font-size: 25px;
+			font-weight: 600;
+			margin-bottom: 12px;
+			@media only screen and (max-width: 767px) {
+				font-size: 22px;
+			}
+		}
+		.form-control {
+			height: 50px;
+			border-radius: 10px;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+	}
+	.inner-texts {
+		span {
+			font-size: 15px;
+		}
+		p {
+			font-size: 15px;
+			strong {
+				font-weight: 600;
+			}
+		}
+	}
+	.btn-wallet {
+		border: 0;
+		border-radius: 10px;
+		display: block;
+		width: 100%;
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		height: 53px;
+		background: #3f78f4;
+		font-size: 17px;
+		font-weight: 600;
+		color: #fff;
+		margin-top: 20px;
+		transition: all 0.2s ease-in;
+		@media only screen and (max-width: 767px) {
+			font-size: 15px;
+		}
+		&:hover {
+			background-color: #e72e4c;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# mint-sec
+--------------------------------------------------------------*/
+
+.mint-sec {
+	padding-top: 80px;
+	padding-bottom: 60px;
+
+	@media only screen and (max-width: 767px) {
+		padding: 70px 15px 40px 15px;
+	}
+	.mint-box {
+		background-color: #010101;
+		position: relative;
+		z-index: 2;
+		display: block;
+		width: 100%;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		border-radius: 20px;
+		overflow: hidden;
+		border: 2px solid $primary-color;
+		.mint-body {
+			padding: 20px 30px 30px 30px;
+			background-color: #000;
+			@media only screen and (max-width: 767px) {
+				padding: 20px 20px;
+			}
+		}
+
+		.connect-btn {
+			text-decoration: none;
+			display: inline-block;
+			border: 0;
+			outline: none;
+			text-align: center;
+			padding: 8px 26px;
+			background: #56cd64;
+			color: $text-color;
+			font-size: 15px;
+			font-weight: 700;
+			border-radius: 8px;
+			transition: all 0.2s ease-in;
+			cursor: pointer;
+			min-width: 180px;
+			margin-bottom: 16px;
+			&:hover {
+				color: $text-color;
+				box-shadow: 0 0 10px 10px rgb(86 205 100 / 13%);
+			}
+		}
+
+		.form-select {
+			border-radius: 10px;
+			border-color: #fff;
+			box-shadow: none;
+		}
+		.nft-add {
+			text-align: center;
+			padding-top: 16px;
+			p {
+				font-weight: 500;
+				font-size: 13px;
+				color: #fff;
+			}
+			span {
+				font-size: 12px;
+				color: #abaaaa;
+			}
+		}
+		.text-mut {
+			display: block;
+			width: 100%;
+			font-size: 14px;
+			color: gray;
+			margin-top: 4px;
+		}
+		.mint-btn {
+			text-decoration: none;
+			display: inline-block;
+			border: 0;
+			outline: none;
+			text-align: center;
+			padding: 8px 26px;
+			background: #cf4e13;
+			color: $text-color;
+			font-size: 15px;
+			font-weight: 700;
+			border-radius: 8px;
+			transition: all 0.2s ease-in;
+			cursor: pointer;
+			min-width: 180px;
+			margin-top: 16px;
+			&:hover {
+				color: $text-color;
+				box-shadow: 0 0 10px 10px rgb(68 195 205 / 13%);
+			}
+		}
+
+		.mint-text {
+			margin-bottom: 30px;
+			h2 {
+				font-weight: 400;
+				font-size: 26px;
+				color: #fff;
+				margin-bottom: 16px;
+				@media only screen and (max-width: 767px) {
+					font-size: 22px;
+				}
+			}
+			p {
+				font-size: 18px;
+				color: #ccc;
+				font-weight: 400;
+				line-height: 1.3;
+				@media only screen and (max-width: 767px) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# app-page
+--------------------------------------------------------------*/
+.app-page {
+  padding-top: 110px;
+	padding-bottom: 60px;
+	@media only screen and (max-width: 767px) {
+	padding-top: 90px;
+  padding-bottom: 40px;
+	}
+	.hero-slide {
+		width: 100%;
+		max-width: 100%;
+		border-radius: 6px 60px 6px 60px;
+		border: 2px solid rgba(15, 208, 247, 0.924);
+		box-shadow: 0 3px 20px 0px rgba(15, 208, 247, 0.924);
+	}
+
+	.hero-text {
+		display: block;
+		background-color: #09151d;
+		box-shadow: 0 3px 20px 0px rgba(15, 208, 247, 0.924);
+		border: 2px solid rgba(15, 208, 247, 0.924);
+		padding: 30px 30px;
+		border-radius: 6px 60px 6px 60px;
+		height: 100%;
+		@media only screen and (max-width: 767px) {
+			padding: 25px 25px;
+		}
+	}
+	.hero-logo {
+		margin-bottom: 16px;
+		h1 {
+			font-size: 40px;
+			text-transform: uppercase;
+			font-weight: 700;
+			@media only screen and (max-width: 767px) {
+				font-size: 30px;
+			}
+		}
+		span {
+			display: inline-block;
+			color: #ebbf1f;
+			font-weight: 600;
+			font-size: 15px;
+			@media only screen and (max-width: 767px) {
+				font-size: 14px;
+			}
+		}
+	}
+	p {
+		font-size: 16px;
+		@media only screen and (max-width: 767px) {
+			font-size: 15px;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		li {
+			display: flex;
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+		i {
+			font-size: 18px;
+			color: #ebbf1f;
+			position: relative;
+			top: 3px;
+			margin-right: 5px;
+		}
+		span {
+			font-size: 14px;
+			font-weight: 600;
+			color: #eee;
+		}
+	}
+	.btn-walet {
+		width: 100%;
+		display: block;
+		text-align: start;
+		position: relative;
+		text-decoration: none;
+		border: 0;
+		background-color: #60bd2e;
+		color: #fff;
+		padding: 14px 20px;
+		border-radius: 8px;
+		margin-bottom: 26px;
+		font-size: 16px;
+		font-weight: 600;
+		&.btn-cal {
+			background-color: #ec881d;
+		}
+		transition: all 0.2s ease-in;
+		&:hover {
+			opacity: 0.8;
+			color: #fff;
+		}
+		.w-img {
+			height: 60px;
+			position: absolute;
+			top: 50%;
+			right: 5px;
+			transform: translateY(-50%);
+			@media only screen and (max-width: 767px) {
+				height: 52px;
+			}
+		}
+		@media only screen and (max-width: 767px) {
+			padding: 12px 20px;
+			margin-bottom: 20px;
+			font-size: 14px;
+		}
+	}
+
+	.wallet-box {
+		margin-bottom: 20px;
+		h5 {
+			font-size: 18px;
+			font-weight: 600;
+		}
+		p {
+			display: inline-block;
+			background-color: #fff;
+			color: #000;
+			font-size: 13px;
+			line-height: 1.5;
+			padding: 4px 10px;
+			border-radius: 7px;
+		}
+	}
+}
+
+.wallet-summ {
+	background-color: #fff;
+	text-align: center;
+	margin-top: 18px;
+	border-radius: 10px;
+	.frm-grp {
+		margin-bottom: 12px;
+	}
+	label {
+		color: #000;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.input-l {
+		background-color: #000;
+		font-size: 14px;
+		color: #fff;
+		font-weight: 600;
+	}
+	.btn-disconnect {
+		display: inline-block;
+		background-color: #e72e2e;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 600;
+		padding: 9px 20px;
+		border-radius: 7px;
+		border: 0;
+		margin-top: 7px;
+		margin-bottom: 14px;
+		text-decoration: none;
+		transition: all 0.2s ease-in;
+		&:hover {
+			background-color: #c51c38;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# fon
+--------------------------------------------------------------*/
+.fon{
+  padding-top: 80px;
+	padding-bottom: 0px;
+
+	@media only screen and (max-width: 767px) {
+		padding: 80px 0px 0px 0px;
+	}
+
+  .fon-text{
+    margin-bottom: 30px;
+    @media only screen and (max-width: 991px) {
+     text-align: center;
+    }
+    @media only screen and (max-width: 767px) {
+     margin-bottom: 20px;
+    }
+    h1{
+      font-size: 40px;
+      font-weight: 700;
+      background: linear-gradient(270deg,#9BB3F2 15.33%,#F0A5A4 101.88%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      margin-bottom: 16px;
+      @media only screen and (max-width: 1199px) {
+       font-size: 35px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 31px;
+       margin-bottom: 12px;
+      }
+      @media only screen and (max-width: 482px) {
+        font-size: 29px;
+        margin-bottom: 12px;
+       }
+    }
+    p{
+      font-size: 16px;
+      font-weight: 600;
+      @media only screen and (max-width: 767px) {
+       font-size: 15px;
+      }
+    }
+  }
+
+}
+
+.fon-box{
+  max-width: 280px;
+  @media only screen and (max-width: 991px) {
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .btn-connect{
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding: 8px 26px;
+    background: #56cd64;
+    color: $text-color;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    min-width: 280px;
+    margin-bottom: 16px;
+    &:hover {
+      color: $text-color;
+      box-shadow: 0 0 10px 10px rgb(86 205 100 / 13%);
+    }
+  }
+
+  .form-select {
+    border-radius: 10px;
+    border-color: #fff;
+    box-shadow: none;
+  }
+  .btn-mint{
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding: 8px 26px;
+    background: #cf4e13;
+    color: $text-color;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    min-width: 280px;
+    margin-top: 16px;
+    &:hover {
+      color: $text-color;
+      box-shadow: 0 0 10px 10px rgb(68 195 205 / 13%);
+    }
+  }
+.small-txt{
+  text-align: center;
+  font-size: 13px;
+  margin-top: 4px;
+  opacity: .8;
+}
+}
+
+/*--------------------------------------------------------------
+# wallet-black
+--------------------------------------------------------------*/
+.wallet-black{
+  text-align: center;
+  .frm-grp{
+    label{
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+  }
+  .form-control{
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+/*--------------------------------------------------------------
+# waller-ne
+--------------------------------------------------------------*/
+.waller-ne{
+  padding: 15px 15px;
+  .frm-grp{
+    margin-bottom: 0;
+    label{
+      font-size: 13px;
+      margin-bottom: 4px;
+      color: #000;
+    }
+  }
+  .form-control{
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    background: #000;
+    color: #fff;
+  }
+}

@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# min-sec
+--------------------------------------------------------------*/
+
+.min-sec{
+  padding-top: 100px;
+}
+.mi-box{
+  padding: 40px 30px;
+  border-radius: 22px;
+ background: #0a1329;
+ text-align: center;
+ box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.50);
+ @media only screen and (max-width: 767px) {
+  padding: 30px 20px;
+ }
+ h3, h2{
+  font-size: 22px;
+  font-weight: 600;
+ }
+ h5{
+  font-size: 18px;
+  font-weight: 600;
+ }
+ h6{
+  font-size: 18px;
+  font-weight: 600;
+ }
+}
+.btn-primary{
+  border: 0;
+  background: linear-gradient(269.21deg, #44B7E9 -62.88%, #00B695 173.99%);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease-in;
+    &:hover{
+      background: linear-gradient(269.21deg, #3eabd9 -62.88%, #01977b 173.99%);
+      color: #fff;
+    }
+}
