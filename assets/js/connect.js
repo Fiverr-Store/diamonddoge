@@ -46,7 +46,7 @@ async function connectWallet() {
 	mintContract = new web3.eth.Contract(mintAbi, mintAddr);
 
 	rewardContract = new web3.eth.Contract(rewardAbi, rewardAddr);
-	
+
 
 	$("#mintConnectButton").html(formatAddr(selectedAccount));
 
@@ -148,7 +148,7 @@ async function renderNfts() {
 			$("#claim-all-rewards").addClass(`disabled`);
 
 		}
-		
+
 		$("#claimedRewardsReports").html(`YOU CLAIMED <span class="rewardTokenAmount">${readeblePriceFormat(amountOfRewardByAddress)}</span> REWARD TOKENS SINCE NOW`);
 		$("#claimedRewardsReports").css('display', 'block')
 
@@ -338,8 +338,5 @@ $(async function () {
 	if(price == 0 || price == "0"){return 0}
 	price = price.toString()
 	price =  price.substring(0, price.length-9);
-	return  price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");	
+	return  price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
-
-
-
