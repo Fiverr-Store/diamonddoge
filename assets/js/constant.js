@@ -1171,7 +1171,7 @@ let mintAbi = [
 	}
 ];
 
-let mintAddr = '0x09CC403e90D061C0F15396b114F9c865f09eF7b5';
+let mintAddr = '0x68dC7634CaB0d72f50dbf0faFF7C868764e4A440';
 
 const pinataBaseUrl = "https://mindmusic.mypinata.cloud/ipfs/";
 
