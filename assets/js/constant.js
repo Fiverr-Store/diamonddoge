@@ -1173,7 +1173,7 @@ let mintAbi = [
 
 let mintAddr = '0x68dC7634CaB0d72f50dbf0faFF7C868764e4A440';
 
-const pinataBaseUrl = "https://mindmusic.mypinata.cloud/ipfs/";
+const pinataBaseUrl = "https://api.dapprex.com/diamond-doge/mint/";
 
 
 let rewardAbi = [
