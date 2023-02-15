@@ -41,10 +41,10 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		background: linear-gradient(97.68deg, #7452bd 16.12%, #1a68ff 102.09%);
+		background: linear-gradient(97.68deg, $secondary-color 16.12%, $primary-color 102.09%);
 		font-size: 16px;
 		font-weight: 600;
-		color: #fff;
+		color: $text-color;
 		border-radius: 10px;
 		padding: 12px 24px;
 		min-width: 210px;

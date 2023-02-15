@@ -34,8 +34,7 @@
 $yellow: #000;
 
 .token {
-	background-color: $bg-nav-collapse;
-	box-shadow: 0 0 56.89125px rgb(0 0 0 / 25%);
+
 	padding: 80px 0px;
 	@media only screen and (max-width: 767px) {
 		padding: 50px 0px;
@@ -114,8 +113,9 @@ $yellow: #000;
 	}
 
 	.r-single {
-		background-color: $bg-nav-collapse;
-		box-shadow: 0 0 56.89125px rgba(0, 0, 0, 0.65);
+		background-color: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow: 0 5px 20px rgb(0 0 0 / 25%);
 		padding: 30px 30px;
 		text-align: center;
 		border-radius: 20px;
@@ -188,6 +188,10 @@ $yellow: #000;
 				padding: 6px;
 			}
 		}
+    &.btn-uni{
+      background-color: #FF007A;
+      color: $text-color;
+    }
 		&.btn-poo {
 			background-color: #bb8c65;
 			img {
@@ -201,9 +205,9 @@ $yellow: #000;
 .clip-board-box {
 	position: relative;
 	max-width: 500px;
-	background-color: rgba($primary-color, 0.7);
+	background-color: rgba($secondary-color, 0.4);
 	display: inline-block;
-	padding: 7px 10px;
+	padding: 8px 10px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -215,7 +219,7 @@ $yellow: #000;
 
 	.text-line {
 		font-weight: 500;
-		color: #000;
+		color: $text-color;
 		margin-right: 5px;
 		font-size: 13px;
 	}
@@ -308,6 +312,9 @@ $yellow: #000;
   }
   .det-single{
     background-color: #000;
+    background-color: rgba(255,255,255,.03);
+    // border: 1px solid rgba(255,255,255,.15);
+    box-shadow: 0 5px 20px rgb(0 0 0 / 25%);
     padding: 40px 40px;
     border-radius: 26px;
     height: 100%;
