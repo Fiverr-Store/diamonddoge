@@ -10,7 +10,7 @@
 	background-color: transparent;
 	backdrop-filter: blur(8px);
 	transition: all 0.3s ease-out 0s;
-
+  border-bottom: 1px solid transparent;
 	.container {
 		max-width: 1500px;
 	}
@@ -139,9 +139,8 @@
 			top: 100%;
 			left: 0;
 			width: 100%;
-			background-color: $bg-black;
+			background-color: #130f15;
 			z-index: 9;
-			box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
 			padding: 15px 12px 20px 12px;
 		}
 
@@ -150,9 +149,8 @@
 			top: 100%;
 			left: 0;
 			width: 100%;
-			background-color: $bg-black;
+      background-color: #130f15;
 			z-index: 9;
-			box-shadow: 0 15px 20px 0 rgba(43, 56, 109, 0.1);
 		}
 	}
 
@@ -202,7 +200,9 @@
 .sticky {
 	position: fixed;
 	z-index: 99;
-	background-color: #12122f;
+  background: linear-gradient(90deg,#1b121d 0,#120f2f 50%,#1b121d 100%);
+   border-bottom: 1px solid;
+  border-bottom-color: rgba(255,255,255,.08);
 	backdrop-filter: blur(8px);
 	transition: all 0.3s ease-out 0s;
 
