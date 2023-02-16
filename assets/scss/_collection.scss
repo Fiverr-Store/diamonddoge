@@ -16,3 +16,38 @@
     }
   }
 }
+
+.mint-sec{
+padding-top: 80px;
+@media only screen and (max-width: 1199px) {
+ padding-top: 60px;
+}
+@media only screen and (max-width: 767px) {
+ padding-top: 40px;
+}
+}
+.font-italic{
+  font-style: italic;
+}
+.minti-box{
+  padding: 20px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.15);
+    position: relative;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 25%);
+
+  .minti-inner{
+    padding:30px 30px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,.03);
+  }
+  h3{
+    font-size: 20px;
+    color: lighten($color: $primary-color, $amount: 10%);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  p{
+    margin-bottom: 14px;
+  }
+}

@@ -38,6 +38,20 @@ body {
 		position: fixed;
     z-index: -1;
 	}
+  &::after{
+    content: '';
+    top: 42.8%;
+    right: 25%;
+    background-color: $secondary-color;
+    -webkit-filter: blur(150px);
+    -o-filter: blur(150px);
+    filter: blur(150px);
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    position: fixed;
+    z-index: -1;
+  }
 }
 
 * {
