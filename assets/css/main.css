@@ -406,7 +406,7 @@ h6 a {
 .sec-t {
   text-align: center;
   margin-bottom: 40px;
-  max-width: 600px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -428,15 +428,22 @@ h6 a {
   }
 }
 .sec-t p {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
   color: #fff;
+}
+.sec-t p:not(:last-child) {
+  margin-bottom: 16px;
 }
 @media only screen and (max-width: 767px) {
   .sec-t p {
     font-size: 15px;
     font-weight: 500;
   }
+}
+.sec-t p a {
+  text-decoration: underline;
+  color: yellow;
 }
 
 /*--------------------------------------------------------------
@@ -2240,6 +2247,42 @@ h6 a {
 /*--------------------------------------------------------------
 # min-sec
 --------------------------------------------------------------*/
+.btn-primary {
+  text-decoration: none;
+  border: 0;
+  background-color: #fae601;
+  color: #000;
+  padding: 7px 18px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.btn-primary:hover {
+  color: #000;
+  -webkit-box-shadow: 0 3px 20px 0px rgba(13, 108, 153, 0.52);
+          box-shadow: 0 3px 20px 0px rgba(13, 108, 153, 0.52);
+}
+
+.btn-success {
+  text-decoration: none;
+  border: 0;
+  background-color: #4bb543;
+  color: #000;
+  padding: 7px 18px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.btn-success:hover {
+  color: #000;
+  -webkit-box-shadow: 0 3px 20px 0px rgba(13, 108, 153, 0.52);
+          box-shadow: 0 3px 20px 0px rgba(13, 108, 153, 0.52);
+}
+
 .min-sec {
   padding-top: 120px;
   padding-bottom: 60px;
@@ -2252,19 +2295,25 @@ h6 a {
 }
 
 .mi-box {
-  padding: 40px 15px;
-  border-radius: 22px;
-  background: #000;
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
   text-align: center;
-  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media only screen and (max-width: 767px) {
-  .mi-box {
-    padding: 30px 20px;
-  }
+.mi-box .mi-inner {
+  padding: 30px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.03);
+  height: 100%;
 }
-.mi-box h3, .mi-box h2 {
+.mi-box h3,
+.mi-box h2 {
   font-size: 22px;
   font-weight: 600;
 }
@@ -2286,30 +2335,6 @@ h6 a {
   .mi-box .mint-doge-img {
     max-width: 200px;
   }
-}
-
-.btn-primary {
-  border: 0;
-  background: linear-gradient(269.21deg, #44B7E9 -62.88%, #00B695 173.99%);
-  color: #fff;
-  padding: 10px 30px;
-  border-radius: 6px;
-  font-size: 15px;
-  font-weight: 600;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.btn-primary:hover {
-  background: linear-gradient(269.21deg, #3eabd9 -62.88%, #01977b 173.99%);
-  color: #fff;
-}
-
-.btn-success {
-  padding: 10px 30px;
-  font-size: 15px;
-  font-weight: 600;
-  background-color: #4BB543;
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -2359,7 +2384,7 @@ h6 a {
   backdrop-filter: blur(5px);
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.212);
-  color: #F4F7FA;
+  color: #f4f7fa;
   font-size: 14px;
   height: 44px;
   text-align: center;
@@ -2494,11 +2519,13 @@ h6 a {
   position: relative;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  height: 100%;
 }
 .minti-box .minti-inner {
   padding: 30px 30px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.03);
+  height: 100%;
 }
 .minti-box h3 {
   font-size: 20px;
@@ -2508,6 +2535,37 @@ h6 a {
 }
 .minti-box p {
   margin-bottom: 14px;
+}
+
+.img-box {
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  height: 100%;
+}
+.img-box .img-inner {
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.03);
+  height: 100%;
+}
+.img-box .img-inner img {
+  border-radius: 12px;
+}
+
+.mint-help {
+  margin-top: 6px;
+}
+.mint-help p {
+  font-size: 13px;
+  font-style: italic;
+}
+.mint-help p a {
+  text-decoration: underline;
+  color: yellow;
 }
 
 /*--------------------------------------------------------------

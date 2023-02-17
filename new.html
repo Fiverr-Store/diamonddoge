@@ -13,7 +13,6 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link href="assets/css/lightbox.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/main.css?v=22" />
 </head>
 <body>
@@ -26,11 +25,12 @@
     <![endif]-->
 
 
-      <!-- ======= herder start ======= -->
-  <header class="header">
+   <!-- ======= herder start ======= -->
+   <header class="header">
     <div class="navbar-area">
       <div class="container">
-        <nav class="navbar navbar-expand-lg ">
+
+        <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="/">
             DiamondDoge
           </a>
@@ -43,31 +43,31 @@
           <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
             <ul id="nav" class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="/"> Home </a>
+                <a href="/#home"> Home </a>
               </li>
               <li class="nav-item">
-                <a href="/#about"> About us </a>
+                <a href="/#about"> About </a>
               </li>
 
               <li class="nav-item">
-                <a href="/#utility"> Our Utility </a>
+                <a  href="/#utility"> Roadmap </a>
               </li>
 
               <li class="nav-item">
-                <a href="/#tokenomics"> Tokenomics </a>
+                <a  href="/#collection"> Collection </a>
               </li>
 
-              <li class="nav-item">
-                <a href="/#reward"> Token info </a>
-              </li>
 
               <li class="nav-item">
-                <a href="https://nft.diamonddoge.net/"> Founders NFT  </a>
+                <a  href="/#tokenomics"> Token info </a>
               </li>
 
+
+
               <li class="nav-item">
-                <a href="https://app.diamonddoge.net/" class="btn-nav"> Utility Dashboard  </a>
+                <a href="https://nft-dashboard.diamonddoge.net/" class="btn-nav"> NFT Dashboard </a>
               </li>
+
 
             </ul>
 
@@ -75,6 +75,7 @@
           <!--.collapse-->
 
         </nav>
+
 
       </div>
       <!--.container-->
@@ -88,33 +89,30 @@
 
 
 
-
   <section class="min-sec inventory-sec">
 
     <div class="container">
 
       <div class="mi-box">
-        <img src="assets/img/hero/main_img.png" class="mint-doge-img" alt="">
-        <h2 class="title-sec" id="inventory" style="display: none;"> INVENTORY </h2>
-        <h3 class="title-sec-2 sections-title mt-2" id="title"> Connect wallet to see your NFTs </h3>
-        <h5 class="mt-3" id="nftDialogNotifier" style="display: none;">
-          Click on any NFT on your inventory to open transfer dialog
-        </h5>
-        <button id="claim-all-rewards" onclick="claimAllRewards()" class="btn btn-success mt-4" style="display : none">CLAIM ALL
-          REWARDS</button>
-        <h6 class="title-sec mt-3" id="claimedRewardsReports" style="display: none;"> INVENTORY </h6>
+        <div class="mi-inner">
+          <img src="assets/img/hero/promo.gif" class="mint-doge-img" alt="">
+          <h2 class="title-sec" id="inventory" style="display: none;"> INVENTORY </h2>
+          <h3 class="title-sec-2 sections-title mt-2 mb-3" id="title"> Connect wallet to see your NFTs </h3>
 
-        <div id="showNFT" class="row container justify-content-center" style="margin-top: 20px; margin-bottom: 20px;"></div>
+          <button class="btn-primary"> Connect Wallet </button>
 
-        <div class="btn-sec">
-          <button class="btn btn-primary" id="connectButton" onclick="connectWallet()"> Connect Wallet </button>
-          <div class="dropdown">
-            <button class="btn btn-primary" id="mintConnectButton"> Connect Wallet </button>
-            <div class="dropdown-content">
-              <a onclick="disconnect()">Disconnect</a>
-            </div>
-          </div>
-        </div>
+          <br> <br>
+
+          <button class="btn-success"> Wallet  Connected </button>
+
+        </div><!-- /.mi-inner -->
+
+
+
+
+
+
+
       </div><!-- /.mi-box -->
 
     </div><!--.container-->
@@ -122,7 +120,20 @@
 
   </section>
 
+  <section class="cta">
+    <div class="container">
+      <div class="cta-text">
+        <h3>
+          Our tokenomics ensure our NFT holders are rewarded and our community grows with every transaction.
+        </h3>
+        <a href="https://t.me/diamonddogeeth" target="_blank" class="btn-mobile">
+          <i class="fa fa-telegram" aria-hidden="true"></i>
+          <span> Join Our Community </span>
+        </a>
 
+      </div><!-- /.cta-text -->
+    </div><!-- /.container -->
+  </section><!-- /.cta -->
 
 
 
@@ -138,10 +149,10 @@
         </div><!-- /.footer-logo -->
 
         <div class="footer-social">
-          <a href="https://t.me/diamonddogebsc" target="_blank">
+          <a href="https://t.me/diamonddogeeth" target="_blank">
             <i class="fa fa-telegram" aria-hidden="true"></i>
           </a>
-          <a href="https://twitter.com/D_Dogebsc" target="_blank">
+          <a href="https://twitter.com/DiamondDogeETH" target="_blank">
             <i class="fa fa-twitter-square" aria-hidden="true"></i>
           </a>
           <a href="mailto:info@diamonddoge.net">
@@ -180,15 +191,7 @@
 
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/lightbox.js"></script>
 
-  <script type="text/javascript" src="assets/js/web3/dist/web3.min.js"></script>
-  <script type="text/javascript" src="assets/js/web3/web3modal.js"></script>
-  <script type="text/javascript" src="assets/js/web3/evm-chains/index.min.js"></script>
-  <script type="text/javascript" src="assets/js/web3/walletconnect/index.min.js"></script>
-  <script type="text/javascript" src="assets/js/web3/fortmatic/index.min.js"></script>
-  <script src="assets/js/constant.js?v=23"></script>
-  <script src="assets/js/connect.js?v=23"></script>
 
 
 
