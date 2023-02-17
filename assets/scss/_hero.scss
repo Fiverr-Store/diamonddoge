@@ -139,9 +139,9 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
       background-size: 400% 400%;
-      margin-bottom: 30px;
+      margin-bottom: 26px;
       @media only screen and (max-width: 1199px) {
-       margin-bottom: 24px;
+       margin-bottom: 20px;
       }
       @media only screen and (max-width: 767px) {
        font-size: 30px;
@@ -152,9 +152,9 @@
   }
   p{
     &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @media only screen and (max-width: 767px) {
-     margin-bottom: 20px;
+     margin-bottom: 16px;
     }
     }
   }
