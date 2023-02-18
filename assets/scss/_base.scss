@@ -161,8 +161,10 @@ h6 a {
 	height: 100%;
 	top: 0;
 	left: 0;
+  background: #1b121d;
+	background: linear-gradient(90deg, #1b121d 0, #120f2f 50%, #1b121d 100%);
 	z-index: 99999999;
-	background-color: $bg-black;
+
 }
 
 .lds-spinner {

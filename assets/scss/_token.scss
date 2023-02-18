@@ -63,6 +63,83 @@ $yellow: #000;
 	canvas {
 		width: 100%;
 	}
+
+  .det-single{
+
+    margin-top: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media only screen and (max-width: 767px) {
+     padding-left: 10px;
+     padding-right: 10px;
+     margin-top: 20px;
+    }
+    text-align: center;
+
+
+    &.one{
+
+      h5{
+        color: #ffd014;
+      }
+      p{
+        color: #ffd014;
+        opacity: .8;
+      }
+    }
+    &.two{
+
+      h5{
+        color: #e52ee5;
+      }
+      p{
+        color: #e52ee5;
+        opacity: 1;
+      }
+    }
+    &.three{
+
+      h5{
+        color: #ff0000;
+      }
+      p{
+        color: #ff0000;
+        opacity: 1;
+      }
+    }
+    &.four{
+      border-top: 2px solid #53906a;
+      h5{
+        color: #53906a;
+      }
+      p{
+        color: #53906a;
+        opacity: 1;
+      }
+    }
+    h5{
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      @media only screen and (max-width: 767px) {
+       font-size: 20px;
+       margin-bottom: 8px;
+      }
+
+    }
+    P{
+      font-size: 14px;
+      font-weight: 600;
+      @media only screen and (max-width: 767px) {
+       font-size: 14px;
+      }
+    }
+    transition: all .2s ease-in;
+    &:hover{
+      transform: scale(1.02);
+    }
+  }
+
 }
 .chart-list {
 	padding-top: 16px;

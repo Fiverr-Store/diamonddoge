@@ -185,8 +185,10 @@ h6 a {
   height: 100%;
   top: 0;
   left: 0;
+  background: #1b121d;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #1b121d), color-stop(50%, #120f2f), to(#1b121d));
+  background: linear-gradient(90deg, #1b121d 0, #120f2f 50%, #1b121d 100%);
   z-index: 99999999;
-  background-color: #000000;
 }
 
 .lds-spinner {
@@ -1895,6 +1897,76 @@ h6 a {
 }
 .chart-box canvas {
   width: 100%;
+}
+.chart-box .det-single {
+  margin-top: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+@media only screen and (max-width: 767px) {
+  .chart-box .det-single {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+  }
+}
+.chart-box .det-single.one h5 {
+  color: #ffd014;
+}
+.chart-box .det-single.one p {
+  color: #ffd014;
+  opacity: 0.8;
+}
+.chart-box .det-single.two h5 {
+  color: #e52ee5;
+}
+.chart-box .det-single.two p {
+  color: #e52ee5;
+  opacity: 1;
+}
+.chart-box .det-single.three h5 {
+  color: #ff0000;
+}
+.chart-box .det-single.three p {
+  color: #ff0000;
+  opacity: 1;
+}
+.chart-box .det-single.four {
+  border-top: 2px solid #53906a;
+}
+.chart-box .det-single.four h5 {
+  color: #53906a;
+}
+.chart-box .det-single.four p {
+  color: #53906a;
+  opacity: 1;
+}
+.chart-box .det-single h5 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 767px) {
+  .chart-box .det-single h5 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+}
+.chart-box .det-single P {
+  font-size: 14px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 767px) {
+  .chart-box .det-single P {
+    font-size: 14px;
+  }
+}
+.chart-box .det-single:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .chart-list {
