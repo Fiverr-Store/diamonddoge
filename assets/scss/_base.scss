@@ -5,6 +5,27 @@
 	color: $title-color;
 	background: rgba($primary-color, 0.6);
 }
+
+/*       ScrollBar 1       */
+
+::-webkit-scrollbar {
+	width: 16px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 0px;
+	background-color: #000;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	border: 3px solid transparent;
+	background-clip: content-box;
+	background-color: $secondary-color;
+
+}
+
 html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 30px;
@@ -21,9 +42,9 @@ body {
 	background: linear-gradient(90deg, #1b121d 0, #120f2f 50%, #1b121d 100%);
 	height: auto;
 	position: relative;
-  @media only screen and (max-width: 767px) {
-   font-size: 15px;
-  }
+	@media only screen and (max-width: 767px) {
+		font-size: 15px;
+	}
 	&::before {
 		content: "";
 		top: 27.5%;
@@ -36,32 +57,32 @@ body {
 		height: 270px;
 		border-radius: 100%;
 		position: fixed;
-    z-index: -1;
-    @media only screen and (max-width: 767px) {
-     width: 150px;
-     height: 150px;
-     filter: blur(70px);
-    }
+		z-index: -1;
+		@media only screen and (max-width: 767px) {
+			width: 150px;
+			height: 150px;
+			filter: blur(70px);
+		}
 	}
-  &::after{
-    content: '';
-    top: 42.8%;
-    right: 25%;
-    background-color: $secondary-color;
-    -webkit-filter: blur(150px);
-    -o-filter: blur(150px);
-    filter: blur(150px);
-    width: 270px;
-    height: 270px;
-    border-radius: 100%;
-    position: fixed;
-    z-index: -1;
-    @media only screen and (max-width: 767px) {
-      width: 150px;
-      height: 150px;
-      filter: blur(70px);
-     }
-  }
+	&::after {
+		content: "";
+		top: 42.8%;
+		right: 25%;
+		background-color: $secondary-color;
+		-webkit-filter: blur(150px);
+		-o-filter: blur(150px);
+		filter: blur(150px);
+		width: 270px;
+		height: 270px;
+		border-radius: 100%;
+		position: fixed;
+		z-index: -1;
+		@media only screen and (max-width: 767px) {
+			width: 150px;
+			height: 150px;
+			filter: blur(70px);
+		}
+	}
 }
 
 * {
@@ -161,10 +182,9 @@ h6 a {
 	height: 100%;
 	top: 0;
 	left: 0;
-  background: #1b121d;
+	background: #1b121d;
 	background: linear-gradient(90deg, #1b121d 0, #120f2f 50%, #1b121d 100%);
 	z-index: 99999999;
-
 }
 
 .lds-spinner {
@@ -298,28 +318,27 @@ h6 a {
 	}
 }
 
-
-.btn-w-logo{
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: 0;
-  background-color: #000;
-  border: 2px solid $primary-color;
-  border-radius: 6px;
-  padding: 6px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  color:$text-color;
-  transition: all .2s ease-in;
-  img{
-    height: 25px;
-    margin-right: 8px;
-  }
-  &:hover{
-    background-color: $primary-color;
-    color: $text-color;
-  }
+.btn-w-logo {
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: 0;
+	background-color: #000;
+	border: 2px solid $primary-color;
+	border-radius: 6px;
+	padding: 6px 16px;
+	font-size: 14px;
+	font-weight: 600;
+	color: $text-color;
+	transition: all 0.2s ease-in;
+	img {
+		height: 25px;
+		margin-right: 8px;
+	}
+	&:hover {
+		background-color: $primary-color;
+		color: $text-color;
+	}
 }
