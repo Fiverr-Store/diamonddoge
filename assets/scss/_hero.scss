@@ -58,12 +58,22 @@
 		}
 	}
 	.hero-img {
-		img {
-			width: 100%;
-			height: auto;
-			 max-width: 100%;
-       border-radius: 20px;
-		}
+
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @media only screen and (max-width: 991px) {
+     max-width: 400px;
+    }
+
+    canvas{
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
 	}
 }
 

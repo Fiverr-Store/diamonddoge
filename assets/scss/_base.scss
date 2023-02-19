@@ -9,7 +9,7 @@
 /*       ScrollBar 1       */
 
 ::-webkit-scrollbar {
-	width: 16px;
+	width: 14px;
 }
 
 ::-webkit-scrollbar-track {
@@ -341,4 +341,14 @@ h6 a {
 		background-color: $primary-color;
 		color: $text-color;
 	}
+  margin-top: 36px;
+  @media only screen and (max-width: 991px) {
+   margin-top: 24px;
+  }
+  @media only screen and (max-width: 767px) {
+   margin-top: 20px;
+  }
+  @media only screen and (max-width: 482px) {
+   margin-top: 16px;
+  }
 }

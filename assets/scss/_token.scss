@@ -31,7 +31,6 @@
 	background-color: #fff;
 }
 
-$yellow: #000;
 
 .token {
 
@@ -63,12 +62,18 @@ $yellow: #000;
 	canvas {
 		width: 100%;
 	}
-
+.padd{
+  padding-top: 40px;
+  @media only screen and (max-width: 991px) {
+   padding-top: 0;
+  }
+}
   .det-single{
 
     margin-top: 26px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
     @media only screen and (max-width: 767px) {
      padding-left: 10px;
      padding-right: 10px;
@@ -128,8 +133,11 @@ $yellow: #000;
 
     }
     P{
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 600;
+      @media only screen and (max-width: 991px) {
+       font-size: 14px;
+       }
       @media only screen and (max-width: 767px) {
        font-size: 14px;
       }
@@ -179,7 +187,7 @@ $yellow: #000;
 			a {
 				display: inline-block;
 				text-decoration: underline;
-				color: greenyellow;
+				color: #ffd900;
 				font-weight: 700;
 			}
 		}
@@ -288,6 +296,37 @@ $yellow: #000;
 			}
 		}
 	}
+  .btn-chart{
+    display: inline-flex;
+		align-items: center;
+		text-decoration: none;
+		border: 0;
+		background-color: #000;
+		border-radius: 10px;
+		color: #fff;
+		transition: all 0.2s ease-in;
+		font-size: 14px;
+		font-weight: 600;
+		margin-top: 26px;
+    i {
+			width: 45px;
+			height: 45px;
+      line-height: 45px;
+      background-color: #bd7030;
+      font-size: 20px;
+			border-radius: 6px 0px 0px 6px;
+		}
+    span {
+			padding: 0px 12px 0px 9px;
+		}
+    @media only screen and (max-width: 767px) {
+			margin-top: 18px;
+		}
+    transition: all .2s ease-in;
+    &:hover{
+      background-color: #1f1f1f;
+    }
+  }
 }
 
 .clip-board-box {

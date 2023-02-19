@@ -15,7 +15,7 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/lightcase.css">
-  <link rel="stylesheet" href="assets/css/main.css?v=912" />
+  <link rel="stylesheet" href="assets/css/main.css?v=414" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -108,7 +108,7 @@
         </div><!-- /.col-lg-6 -->
         <div class="col-lg-4">
           <div class="hero-img">
-            <img src="assets/img/hero/promo.gif" alt="">
+            <canvas id="canvas" width="500" height="500"></canvas>
           </div><!-- /.hero-img -->
         </div><!-- /.col-lg-5 -->
       </div><!-- /.row -->
@@ -505,10 +505,14 @@
         </div>
       </div>
 
-      <div class="text-center mt-lg-5 mt-3">
-        <a href="https://opensea.io/collection/diamonddogecollection" target="_blank" class="btn-w-logo">
+      <div class="text-center">
+        <a href="https://opensea.io/collection/diamonddogecollection" target="_blank" class="btn-w-logo mx-1">
           <img src="assets/img/socials/opensea.svg" alt="opensea">
           <span> View on Opensea </span>
+        </a>
+        <a href="https://rarible.com/diamonddoge/" target="_blank" class="btn-w-logo btn-w-r mx-1">
+          <img src="assets/img/socials/r.svg" alt="opensea">
+          <span> View on Rarible </span>
         </a>
       </div><!-- /.text-center -->
 
@@ -583,7 +587,7 @@
       <div class="row gx-5 gy-4 justify-content-center">
         <div class="col-lg-6">
           <div class="chart-box">
-            <h3> Tokenomics </h3>
+            <h3> Transaction Tax </h3>
             <div class="canva-con w-100 mx-auto" style="max-width: 270px;">
               <canvas id="chart1"></canvas>
             </div><!-- /.canva-con -->
@@ -608,23 +612,28 @@
 
             </div><!-- /.chart-list -->
 
-            <div class="det-single one">
-              <h5> NFT Rewards </h5>
-              <p>
-                This proportion of tax is distributed exclusively to people that hold our Diamond Doge NFT in the form of $DOGE.
-                Diamond Doge NFT holders also become members of our exclusive private community. Our private group is no joke and
-                in full of alpha that gives you even more ways to make money! Only 777 Diamond Doge NFT’s will ever be in
-                existence.
-              </p>
-            </div><!-- /.det-single -->
+            <div class="padd">
+              <div class="det-single one">
+                <h5> NFT Rewards </h5>
+                <p>
+                  This proportion of tax is distributed exclusively to people that hold our Diamond Doge NFT in the form of $DOGE.
+                  Diamond Doge NFT holders also become members of our exclusive private community. Our private group is no joke
+                  and
+                  in full of alpha that gives you even more ways to make money! Only 777 Diamond Doge NFT’s will ever be in
+                  existence.
+                </p>
+              </div><!-- /.det-single -->
 
-            <div class="det-single two">
-              <h5> Community Growth Fund </h5>
-              <p>
-                This is the tax that pays for our Marketing initiatives, community giveaways, and for anything else that is for
-                the good of the project.
-              </p>
-            </div><!-- /.det-single -->
+              <div class="det-single two">
+                <h5> Community Growth Fund </h5>
+                <p>
+                  This is the tax that pays for our Marketing initiatives, community giveaways, and for anything else that is for
+                  the good of the project.
+                </p>
+              </div><!-- /.det-single -->
+
+            </div><!-- /.padd -->
+
 
           </div><!-- /.token-box -->
         </div><!-- /.col-lg-5 -->
@@ -713,7 +722,7 @@
         <div class="col-lg-6">
           <div class="r-single">
             <div class="r-header">
-              <img src="assets/img/resrc/diamond-doge.png" class="r-logo" alt="">
+              <img src="assets/img/hero/promo.gif" class="r-logo" alt="">
               <h3> Diamond Doge </h3>
               <span> USE THE DETAILS BELOW TO ADD THE TOKEN TO YOUR WALLET OR TO PURCHASE Diamond Doge </span>
             </div><!-- /.r-header -->
@@ -738,11 +747,20 @@
               <p> <strong>DECIMALS:</strong> 9 </p>
             </div><!-- /.r-body -->
 
-            <a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x1f584D84ACCdC9FeE47c24667Ab730c379c8074d"
-              target="_blank" class="btn-hero btn-swap btn-uni">
-              <img src="assets/img/uniswap-uni-logo.svg" style="background-color: #fdd8ea;" alt="">
-              <span> Buy Diamond Doge</span>
-            </a>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+              <a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x1f584D84ACCdC9FeE47c24667Ab730c379c8074d"
+                target="_blank" class="btn-hero btn-swap btn-uni mx-1">
+                <img src="assets/img/uniswap-uni-logo.svg" style="background-color: #fdd8ea;" alt="">
+                <span> Buy Diamond Doge</span>
+              </a>
+
+              <a href="https://www.dexview.com/eth/0x1f584D84ACCdC9FeE47c24667Ab730c379c8074d" target="_blank"
+                class="btn-chart mx-1">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <span> View Live Chart </span>
+              </a>
+
+            </div><!-- /.d-flex -->
 
           </div><!-- /.r-single -->
         </div><!-- /.col-lg-6 -->
@@ -884,6 +902,7 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/@rive-app/canvas@1.0.98"></script>
   <script src="assets/js/lightcase.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
@@ -891,6 +910,14 @@
     $('a[data-rel^=lightcase]').lightcase();
 
   </script>
+
+<script>
+  new rive.Rive({
+    src: "assets/2._doge.riv",
+    canvas: document.getElementById("canvas"),
+    autoplay: true
+  });
+</script>
 
 
   <script>

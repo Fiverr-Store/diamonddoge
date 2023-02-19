@@ -14,7 +14,7 @@
 
 /*       ScrollBar 1       */
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-track {
@@ -410,6 +410,7 @@ h6 a {
   color: #ddd;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  margin-top: 36px;
 }
 .btn-w-logo img {
   height: 25px;
@@ -418,6 +419,21 @@ h6 a {
 .btn-w-logo:hover {
   background-color: #cc00ff;
   color: #ddd;
+}
+@media only screen and (max-width: 991px) {
+  .btn-w-logo {
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn-w-logo {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .btn-w-logo {
+    margin-top: 16px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -462,8 +478,8 @@ h6 a {
   }
 }
 .sec-t p a {
-  text-decoration: underline;
-  color: yellow;
+  font-weight: 600;
+  color: #ffd900;
 }
 
 /*--------------------------------------------------------------
@@ -791,11 +807,22 @@ h6 a {
     margin-bottom: 12px;
   }
 }
-.hero-area .hero-img img {
+.hero-area .hero-img {
+  max-width: 500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .hero-area .hero-img {
+    max-width: 400px;
+  }
+}
+.hero-area .hero-img canvas {
   width: 100%;
-  height: auto;
-  max-width: 100%;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .hero-btns {
@@ -1916,10 +1943,19 @@ h6 a {
 .chart-box canvas {
   width: 100%;
 }
+.chart-box .padd {
+  padding-top: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .chart-box .padd {
+    padding-top: 0;
+  }
+}
 .chart-box .det-single {
   margin-top: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -1974,8 +2010,13 @@ h6 a {
   }
 }
 .chart-box .det-single P {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
+}
+@media only screen and (max-width: 991px) {
+  .chart-box .det-single P {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .chart-box .det-single P {
@@ -2039,7 +2080,7 @@ h6 a {
 .chart-list .chart-point p a {
   display: inline-block;
   text-decoration: underline;
-  color: greenyellow;
+  color: #ffd900;
   font-weight: 700;
 }
 .chart-list .chart-point h5 {
@@ -2156,6 +2197,44 @@ h6 a {
 .reward .btn-hero.btn-poo img {
   background-color: #735136;
   padding: 7px;
+}
+.reward .btn-chart {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  border: 0;
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 26px;
+  transition: all 0.2s ease-in;
+}
+.reward .btn-chart i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #bd7030;
+  font-size: 20px;
+  border-radius: 6px 0px 0px 6px;
+}
+.reward .btn-chart span {
+  padding: 0px 12px 0px 9px;
+}
+@media only screen and (max-width: 767px) {
+  .reward .btn-chart {
+    margin-top: 18px;
+  }
+}
+.reward .btn-chart:hover {
+  background-color: #1f1f1f;
 }
 
 .clip-board-box {
@@ -2669,7 +2748,7 @@ h6 a {
 }
 .mint-help p a {
   text-decoration: underline;
-  color: yellow;
+  color: #ffd900;
 }
 
 /*--------------------------------------------------------------
